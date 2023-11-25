@@ -1,0 +1,32 @@
+// header and navbar
+
+.navbar {
+    border-bottom: .5px solid $c-main-gray;
+    background-color: $c-bg-yellow;
+}
+
+.navbar .navbar-brand {
+    font-family: $f-primary;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    font-family: $f-secondary;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: $c-main-gray;
+
+    &:hover {
+        text-decoration: underline;
+        opacity: 0.4;
+    }
+}
+
+.navbar .navbar-toggler {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

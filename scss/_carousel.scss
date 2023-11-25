@@ -1,0 +1,14 @@
+// carousel
+
+.carousel {
+    background-color: black;
+    font-family: $f-secondary;
+}
+
+.carousel-item img {  
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    height: 70vh;
+    opacity: .8;
+  }

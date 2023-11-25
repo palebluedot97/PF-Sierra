@@ -1,0 +1,48 @@
+// about
+
+.about {
+    text-align: center;
+    margin: 5vh;
+    text-transform: lowercase;
+
+    h1 {
+        font-family: $f-primary;
+        color: $c-main-gray;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-family: $f-secondary;
+        font-size: 15px;
+        margin: 15px;
+    }
+}
+
+@mixin fieldFocus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: $c-light-green;
+    outline: 0;
+}
+
+.formControl {
+    margin: 15px;
+
+    input,
+    textarea {
+        border: solid 1px $c-main-gray;
+        padding: 5px;
+        width: 55%;
+        font-size: 13px;
+        font-family: $f-secondary;
+    }
+
+    input:focus {
+        @include fieldFocus;
+    }
+
+    textarea:focus {
+        @include fieldFocus;
+    }
+}

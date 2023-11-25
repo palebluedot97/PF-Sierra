@@ -1,0 +1,232 @@
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display">';
+@import 'https://fonts.googleapis.com/css?family=Inconsolata">';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: #fffef7;
+}
+
+.carousel {
+  background-color: black;
+  font-family: "Inconsolata", monospace;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  height: 70vh;
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #405738;
+  color: #f2f2f2;
+  font-family: "Inconsolata", monospace;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.navbar {
+  border-bottom: 0.5px solid #373433;
+  background-color: #fffef7;
+}
+
+.navbar .navbar-brand {
+  font-family: "Playfair Display", bold;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: #373433;
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  opacity: 0.4;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.products {
+  text-align: center;
+  margin: 5vh;
+}
+.products h3 {
+  font-family: "Playfair Display", bold;
+  color: #373433;
+  font-size: 30px;
+  font-weight: bold;
+}
+.products h4 {
+  font-family: "Inconsolata", monospace;
+  font-size: 15px;
+}
+
+.containerProducts {
+  font-family: "Inconsolata", monospace;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 5vh;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+}
+.product img {
+  border: none;
+  max-width: 100%;
+}
+.product p {
+  text-align: center;
+  margin: 10px 0;
+}
+.product:hover {
+  border: 1px solid #373433;
+}
+
+.productName {
+  font-size: 15px;
+  height: auto;
+}
+
+#productInfo .productName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.productPrice {
+  font-size: 12px;
+}
+
+#productInfo .productPrice {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.productDesc {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.button {
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  font-size: 13px;
+  background-color: #CC3A3D;
+  border: 1px solid #373433;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  background-color: #373433;
+  color: #fffef7;
+}
+
+.out-of-stock:hover {
+  background-color: #ff792c;
+  opacity: 0.8;
+}
+
+.containerProduct {
+  font-family: "Inconsolata", monospace;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+}
+.containerProduct img {
+  max-width: 100%;
+  align-items: center;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.about {
+  text-align: center;
+  margin: 5vh;
+  text-transform: lowercase;
+}
+.about h1 {
+  font-family: "Playfair Display", bold;
+  color: #373433;
+  font-size: 30px;
+  font-weight: bold;
+}
+.about h2 {
+  font-family: "Inconsolata", monospace;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.formControl {
+  margin: 15px;
+}
+.formControl input,
+.formControl textarea {
+  border: solid 1px #373433;
+  padding: 5px;
+  width: 55%;
+  font-size: 13px;
+  font-family: "Inconsolata", monospace;
+}
+.formControl input:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #90b285;
+  outline: 0;
+}
+.formControl textarea:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #90b285;
+  outline: 0;
+}
+
+@media (max-width: 1023px) {
+  .containerProducts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .containerProduct {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 15vh;
+  }
+}
+@media (max-width: 768px) {
+  .containerProducts {
+    grid-template-columns: 1fr;
+    margin: 10vh;
+  }
+  .containerProduct {
+    grid-template-columns: 1fr;
+    margin: 5vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
